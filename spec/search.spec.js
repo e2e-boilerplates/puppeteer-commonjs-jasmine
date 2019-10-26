@@ -30,6 +30,7 @@ describe("google search", () => {
 
   it('the page title should start with "Cheese!', async () => {
     await page.waitFor("#resultStats");
+
     const title = await page.title();
     const words = title.split(" ");
     expect(words[0]).toEqual("Cheese!");
