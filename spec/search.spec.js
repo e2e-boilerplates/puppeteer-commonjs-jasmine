@@ -10,6 +10,12 @@ describe("google search", () => {
     await page.goto("https://www.google.com", { waitUntil: "networkidle0" });
   });
 
+  afterAll(() => {
+    if (!page.isClosed()) {
+      browser.close();
+    }
+  });
+
   it("should be on google search page", async () => {
     const title = await page.title();
     expect(title).toEqual("Google");
