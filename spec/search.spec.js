@@ -2,6 +2,7 @@ const puppeteer = require("puppeteer");
 
 let page;
 let browser;
+const searchBox = ".gLFyf.gsfi";
 
 describe("google search", () => {
   beforeAll(async () => {
@@ -23,13 +24,15 @@ describe("google search", () => {
   });
 
   it("should be on google search page", async () => {
+    await page.waitFor(searchBox);
+
     const title = await page.title();
     expect(title).toEqual("Google");
   });
 
   it("should search for Cheese!", async () => {
-    const searchBox = ".gLFyf.gsfi";
     expect(!!(await page.$(searchBox))).toBe(true);
+
     await page.type(searchBox, "Cheese!", { delay: 100 });
     await page.keyboard.press("\n");
   });
