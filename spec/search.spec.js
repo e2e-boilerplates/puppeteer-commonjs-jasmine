@@ -7,7 +7,13 @@ describe("google search", () => {
   beforeAll(async () => {
     browser = await puppeteer.launch({ headless: false });
     page = await browser.newPage();
-    await page.goto("https://www.google.com", { waitUntil: "networkidle0" });
+
+    await Promise.race([
+      page
+        .goto("https://www.google.com", { waitUntil: "networkidle0" })
+        .catch(() => {}),
+      page.waitFor("body", { timeout: 6000 }).catch(() => {})
+    ]);
   });
 
   afterAll(() => {
