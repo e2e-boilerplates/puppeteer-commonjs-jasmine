@@ -3,24 +3,31 @@ const puppeteer = require("puppeteer");
 let page;
 let browser;
 const searchBox = ".gLFyf.gsfi";
+let originalTimeout;
 
 describe("google search", () => {
   beforeAll(async () => {
-    browser = await puppeteer.launch({ headless: false });
+    browser = process.env.GITHUB_ACTIONS
+      ? await puppeteer.launch()
+      : await puppeteer.launch({ headless: false });
     page = await browser.newPage();
 
-    await Promise.race([
-      page
-        .goto("https://www.google.com", { waitUntil: "networkidle0" })
-        .catch(() => {}),
-      page.waitFor("body", { timeout: 6000 }).catch(() => {})
-    ]);
+    await page.goto("https://www.google.com", { waitUntil: "networkidle0" });
   });
 
   afterAll(() => {
     if (!page.isClosed()) {
       browser.close();
     }
+  });
+
+  beforeEach(function() {
+    originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL;
+    jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+  });
+
+  afterEach(function() {
+    jasmine.DEFAULT_TIMEOUT_INTERVAL = originalTimeout;
   });
 
   it("should be on google search page", async () => {
