@@ -1,4 +1,4 @@
-name: ppuppeteer-commonjs-jasmine
+name: puppeteer-commonjs-jasmine
 
 on: [push]
 
