@@ -1,6 +1,6 @@
 # Puppeteer: (commonjs, jasmine)
 
-[![GitHub Actions status | e2e-boilerplates/ppuppeteer-commonjs-jasmine](https://github.com/e2e-boilerplates/puppeteer-commonjs-jasmine/workflows/NodeCI/badge.svg)](https://github.com/e2e-boilerplates/puppeteer-commonjs-jasmine/actions?workflow=NodeCI)
+[![GitHub Actions status | e2e-boilerplates/ppuppeteer-commonjs-jasmine](https://github.com/e2e-boilerplates/puppeteer-commonjs-jasmine/workflows/ppuppeteer-commonjs-jasmine/badge.svg)](https://github.com/e2e-boilerplates/puppeteer-commonjs-jasmine/actions?workflow=ppuppeteer-commonjs-jasmine)
 
 Puppeteer end-to-end test automation boilerplate project. Using commonjs and jasmine.
 
