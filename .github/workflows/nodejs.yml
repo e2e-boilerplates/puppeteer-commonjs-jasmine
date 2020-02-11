@@ -1,4 +1,4 @@
-name: puppeteer-commonjs-jasmine
+name: puppeteer-commonjs-jasmine-expect
 
 on: 
   push:
@@ -21,7 +21,9 @@ jobs:
         npm ci
       env:
         CI: true
-    - name: RUN TESTS
+    - name: LINT
       run: |
         npm run lint
+    - name: TEST
+      run: |
         npm run test
