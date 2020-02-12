@@ -1,7 +1,7 @@
 {
-  "name": "puppeteer-commonjs-jasmine",
+  "name": "puppeteer-commonjs-jasmine-expect",
   "version": "1.0.0",
-  "description": "Puppeteer end-to-end test automation boilerplate project. Using commonjs and jasmine.",
+  "description": "Puppeteer end-to-end test automation boilerplate, using CommonJS, Jasmine and Expect.",
   "scripts": {
     "test": "npx jasmine",
     "lint": "npx eslint --ext .js ./ --fix"
