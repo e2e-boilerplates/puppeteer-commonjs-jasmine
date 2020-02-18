@@ -1,4 +1,4 @@
-# Puppeteer: (CommonjJS, Jasmine and Expect)
+# Puppeteer: (CommonJS, Jasmine and Expect)
 
 [![GitHub Actions status | e2e-boilerplates/ppuppeteer-commonjs-jasmine-expect](https://github.com/e2e-boilerplates/puppeteer-commonjs-jasmine-expect/workflows/puppeteer-commonjs-jasmine-expect/badge.svg)](https://github.com/e2e-boilerplates/puppeteer-commonjs-jasmine-expect/actions?workflow=puppeteer-commonjs-jasmine-expect)
 
