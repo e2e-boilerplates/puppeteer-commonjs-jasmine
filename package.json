@@ -1,22 +1,9 @@
 {
-  "name": "puppeteer-commonjs-jasmine-expect",
-  "version": "1.0.0",
-  "description": "Puppeteer end-to-end test automation boilerplate, using CommonJS, Jasmine and Expect.",
-  "scripts": {
-    "lint": "npx eslint --ext .js ./ --fix",
-    "test": "npx jasmine"
-  },
-  "keywords": [
-    "puppeteer",
-    "commonjs",
-    "jasmine",
-    "boilerplate",
-    "example",
-    "e2e",
-    "e2e test"
-  ],
   "author": "Girma Nigusse <xgirma@gmail.com> (https://github.com/xgirma)",
-  "license": "MIT",
+  "dependencies": {
+    "jasmine": "3.5.0"
+  },
+  "description": "Puppeteer end-to-end test automation boilerplate, using CommonJS, Jasmine and Expect.",
   "devDependencies": {
     "eslint": "6.8.0",
     "eslint-config-airbnb-base": "14.0.0",
@@ -28,12 +15,31 @@
     "pretty-quick": "2.0.1",
     "puppeteer": "2.1.1"
   },
-  "dependencies": {
-    "jasmine": "3.5.0"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
-  }
+  },
+  "keywords": [
+    "boilerplate",
+    "commonjs",
+    "e2e",
+    "e2e tests",
+    "example",
+    "expect",
+    "integration test",
+    "jasmine",
+    "puppeteer"
+  ],
+  "license": "MIT",
+  "name": "puppeteer-commonjs-jasmine-expect",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e2e-boilerplates/puppeteer-commonjs-jasmine-expect.git"
+  },
+  "scripts": {
+    "lint": "npx eslint --ext .js ./ --fix",
+    "test": "npx jasmine"
+  },
+  "version": "1.0.0"
 }
