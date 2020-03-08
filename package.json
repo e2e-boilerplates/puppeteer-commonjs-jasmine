@@ -1,9 +1,9 @@
 {
-  "author": "",
+  "author": "Girma Nigusse <xgirma@gmail.com> (https://github.com/xgirma)",
   "dependencies": {
     "jasmine": "3.5.0"
   },
-  "description": "Puppeteer end-to-end test automation boilerplate, using CommonJS, Jasmine and Expect.",
+  "description": "puppeteer end-to-end test automation boilerplate.",
   "devDependencies": {
     "eslint": "6.8.0",
     "eslint-config-airbnb-base": "14.0.0",
@@ -21,8 +21,13 @@
     }
   },
   "keywords": [
+    "boilerplate",
     "commonjs",
+    "e2e",
+    "e2e tests",
+    "example",
     "expect",
+    "integration test",
     "jasmine",
     "puppeteer"
   ],
