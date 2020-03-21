@@ -1,7 +1,8 @@
 {
   "env": {
-    "node": true,
-    "jasmine": true
+    "commonjs": true,
+    "jasmine": true,
+    "node": true
   },
   "extends": ["airbnb-base", "plugin:prettier/recommended"]
 }
