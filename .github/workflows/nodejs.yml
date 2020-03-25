@@ -1,5 +1,5 @@
 name: puppeteer-commonjs-jasmine-expect
-"on":
+'on':
   push: null
   schedule:
     - cron: 20 2 1-31/2 * *
