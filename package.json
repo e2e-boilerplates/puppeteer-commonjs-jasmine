@@ -4,12 +4,12 @@
     "url": "https://github.com/e2e-boilerplate/puppeteer-commonjs-jasmine-expect/issues"
   },
   "dependencies": {
-    "eslint": "6.8.0",
     "jasmine": "3.5.0",
     "puppeteer": "2.1.1"
   },
   "description": "Puppeteer end-to-end test automation boilerplate. Using Commonjs, Jasmine and Expect.",
   "devDependencies": {
+    "eslint": "6.8.0",
     "eslint-config-airbnb-base": "14.1.0",
     "eslint-config-prettier": "6.10.1",
     "eslint-plugin-import": "2.20.1",
