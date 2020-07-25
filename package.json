@@ -4,7 +4,7 @@
     "url": "https://github.com/e2e-boilerplate/puppeteer-commonjs-jasmine-expect/issues"
   },
   "dependencies": {
-    "jasmine": "3.6.0",
+    "jasmine": "3.6.1",
     "puppeteer": "5.2.1"
   },
   "description": "Puppeteer end-to-end test automation boilerplate. Using Commonjs, Jasmine and Expect.",
