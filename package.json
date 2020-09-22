@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "jasmine": "3.6.1",
-    "puppeteer": "5.3.0"
+    "puppeteer": "5.3.1"
   },
   "description": "Puppeteer end-to-end test automation boilerplate. Using Commonjs, Jasmine and Expect.",
   "devDependencies": {
